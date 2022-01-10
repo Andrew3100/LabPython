@@ -1,4 +1,23 @@
 
+
+
+
+def my_min(*args):
+
+    result = args[0]
+    for num in args:
+        if num < result:
+            result = num
+    return result
+
+print(my_min([4, 5, 6, 7, 1,-3,-8,-10]))
+
+
+
+
+
+
+exit()
 # Используя стандартные средства. Кратчайший вариант
 string = str(input('Введите строку: '))
 string = string.split(' ')
@@ -37,7 +56,7 @@ def select(arr):
         arr[i], arr[lowest_value_index] = arr[lowest_value_index], arr[i]
     return arr
 
-
+# Сортировка вставкой
 def insertion_sort(arr):
     # По правилам метода вставки начинаем сортировать со второго по счёту элемента
     for i in range(1, len(arr)):
@@ -52,10 +71,10 @@ def insertion_sort(arr):
         arr[j + 1] = item_to_insert
     return arr
 
-
-
+# Ввод
 string = str(input('Введите строку: '))
 
+# Делим по пробелам
 arr = string.split(' ')
 
 # arr = sort_array_bubble(arr)
